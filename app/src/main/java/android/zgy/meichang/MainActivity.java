@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-            if ((System.currentTimeMillis() - exitTime) > 3000) {
+            if ((System.currentTimeMillis() - exitTime) > 3100) {
                 Toast.makeText(getApplicationContext(), R.string.again_according_to_the_exit, Toast.LENGTH_SHORT).show();//再按一次退出
                 exitTime = System.currentTimeMillis();
             } else {
