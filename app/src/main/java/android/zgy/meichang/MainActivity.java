@@ -1,5 +1,6 @@
 package android.zgy.meichang;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -102,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @SuppressLint("SetTextI18n")
     private void initView(Context context){
         //取数据
         getPreferenceStr(context);
@@ -148,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-            if ((System.currentTimeMillis() - exitTime) > 2000) {
+            if ((System.currentTimeMillis() - exitTime) > 3000) {
                 Toast.makeText(getApplicationContext(), R.string.again_according_to_the_exit, Toast.LENGTH_SHORT).show();//再按一次退出
                 exitTime = System.currentTimeMillis();
             } else {
