@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_padding_5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出煤："
+                    android:textSize="@dimen/main_activity_text_size_20sp"
+                    android:textColor="@color/main_activity_text_color_black"/>
+                <EditText
+                    android:id="@+id/id_edit_text_chumei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入出煤数量"
+                    android:maxLength="14"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:maxLines="1"
+                    android:textSize="@dimen/main_activity_text_size_20sp"
+                    android:textColor="@color/main_activity_text_color_black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="吨"
+                    android:textSize="@dimen/main_activity_text_size_20sp"
+                    android:textColor="@color/main_activity_text_color_black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/text_padding_5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收款："
+                        android:textSize="@dimen/main_activity_text_size_20sp"
+                        android:textColor="@color/main_activity_text_color_black"/>
+                    <EditText
+                        android:id="@+id/id_edit_text_shoukuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="请输入总共价格"
+                        android:maxLength="14"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:maxLines="1"
+                        android:textSize="@dimen/main_activity_text_size_20sp"
+                        android:textColor="@color/main_activity_text_color_black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textSize="@dimen/main_activity_text_size_20sp"
+                        android:textColor="@color/main_activity_text_color_black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <Button
+                android:id="@+id/id_button_tianjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加"
+                android:layout_gravity="center"
+                android:padding="@dimen/text_padding_10dp"
+                android:textSize="@dimen/main_activity_text_size_20sp"
+                android:textColor="@color/main_activity_text_color_black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_text_danjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="@dimen/text_padding_5dp"
+        android:textSize="@dimen/main_activity_text_size_20sp"
+        android:textColor="@color/main_activity_text_color_black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/light_gray"/>
+
+    <android.zgy.meichang.listdemo.MyListView
+        android:id= "@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"/>
+
+</LinearLayout>

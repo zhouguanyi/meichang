@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.zgy.meichang.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_padding_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前还有煤："
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+        <TextView
+            android:id="@+id/id_text_dangqianhaiyoumei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100吨"
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_padding_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前平均成本价："
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+        <TextView
+            android:id="@+id/id_text_dangqianpingjunchengbenjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100吨"
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_padding_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总共进煤："
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+        <TextView
+            android:id="@+id/id_text_zonggongjinmei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000吨 共花费35000元"
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_padding_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总共出煤："
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+        <TextView
+            android:id="@+id/id_text_zonggongchumei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100吨 共收到3500元"
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_padding_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他支出："
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+        <TextView
+            android:id="@+id/id_text_qitazhichu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100吨 共收到3500元"
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding = "5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/id_button_jinmei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="进煤"
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+
+        <Button
+            android:id="@+id/id_button_chumei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="出煤"
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+
+        <Button
+            android:id="@+id/id_button_zhichu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="支出"
+            android:textSize="@dimen/main_activity_text_size_20sp"
+            android:textColor="@color/main_activity_text_color_black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

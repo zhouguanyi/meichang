@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/item_line"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp">
+            <!--<TextView-->
+                <!--android:id="@+id/id_list_text_id"-->
+                <!--android:text=""-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="2dp"/>-->
+            <TextView
+                android:id="@+id/id_list_text_content"
+                android:text="content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2.2"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/id_list_text_danjia"
+                android:gravity="center"
+                android:text="danjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/id_list_text_date"
+                android:gravity="center"
+                android:text="date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
